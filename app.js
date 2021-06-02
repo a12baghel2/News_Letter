@@ -8,6 +8,7 @@ const app = express();
 
 //To use static pages
 app.use(express.static("public"));
+app.use(express.json());
 
 //To use bodyparser
 app.use(bodyParser.urlencoded({ extended: true }));
